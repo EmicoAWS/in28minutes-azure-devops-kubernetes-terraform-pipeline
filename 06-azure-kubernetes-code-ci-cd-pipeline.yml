@@ -21,7 +21,7 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'in28minutes-docker-hub'
+#        containerRegistry: 'in28minutes-docker-hub'
         repository: 'in28minutes/currency-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
