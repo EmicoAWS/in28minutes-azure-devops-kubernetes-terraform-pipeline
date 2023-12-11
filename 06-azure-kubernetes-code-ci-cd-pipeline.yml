@@ -21,8 +21,8 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'tomicoazure-docker-hub'
-        repository: 'tomicoazure/currency-exchange-devops'
+        containerRegistry: 'in28minutes-docker-hub'
+        repository: 'in28minutes/currency-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
